@@ -3,6 +3,8 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.http import HttpResponse
 
+from insta.models import Profile
+
 
 # Create your views here.
 
@@ -27,6 +29,13 @@ def signup(request):
             else:
                 user = User.objects.create_user(username=username, email=email, password=password)
                 user.save() 
+                
+                # Log in the user and redirect them to the settings page
+                # Create a profile object for the new user 
+                user_model = User.objects.get(username=username)
+                new_profile = Profile.objects.create(user=user_model, id_user=user_model.id )
+                new_profile.save()
+                return redirect('signup')
         else:
             messages.info(request, 'Your Password Do Not Match')
             return redirect('signup')
