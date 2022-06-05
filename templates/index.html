@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/otis.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -123,13 +123,18 @@
                 </div>
 
                 <!-- profile -->
+                <a
+                    href="{% url 'profile' user_profile.user.username %}" class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white">
+                    <ion-icon name="add-circle" class="-mb-1
+                     mr-1 opacity-90 text-xl uilus-circle"></ion-icon>Profile</a>
 
                 <a href="#">
                     <img src="{{user_profile.profileimg.url}}" class="header-avatar" alt="">
                 </a>
+                
                 <div uk-drop="mode: click;offset:9" class="header_dropdown profile_dropdown border-t">
                     <ul>
-                        <li><a href="/settings"> Account setting </a> </li>
+                        <li><a href="{% url 'settings' %}"> Account setting </a> </li>
                         <li><a href="logout"> Log Out</a></li>
                     </ul>
                 </div>
@@ -161,7 +166,7 @@
                             <a href="#"> <i
                                     class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1 "></i>
                             </a>
-                            <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100  "
+                            <!-- <div class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100  "
                                 uk-drop="mode: hover;pos: top-right">
 
                                 <ul class="space-y-1">
@@ -174,7 +179,7 @@
                                     </li>
                                 </ul>
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -205,6 +210,7 @@
                                 </div>
 
                             </a>
+                            
                             <a href="{{post.image.url}}" class="flex items-center space-x-2 flex-1 justify-end"
                                 download>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

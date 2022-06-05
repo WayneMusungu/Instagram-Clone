@@ -26,11 +26,17 @@
 	
 	<section>
 			<div class="feature-photo">
-				<figure><img src="{% static 'images/resources/timeline-1.jpg' %}" alt=""></figure>
+				<figure><img src="{% static 'images/resources/lake.jpeg' %}" style="height: 400px; width: 100%;
+					 alt=""></figure>
 				<form action="/follow" method="POST">
 					{% csrf_token %}
 					<div class="add-btn">
-					<span style="color: white; font-size: 27px; margin-right: 520px;"><b><u><a href="/">Home</a></u></b></span>
+						<a href="/" style="color: white; font-size: 27px; margin-right: 520px;"
+                    class="bg-pink-500 flex font-bold hidden hover:bg-pink-600 hover:text-white inline-block items-center lg:block max-h-10 mr-4 px-4 py-2 rounded shado text-white">
+                    <ion-icon name="add-circle" class="-mb-1
+                             mr-1 opacity-90 text-xl uilus-circle"></ion-icon> Home
+                </a>
+					<span style="color: white; font-size: 27px; margin-right: 520px;"><b><u><a</a></u></b></span>
 					
 					{% if user_post_length == 0 %}
 					<span style="color: white; font-size: 27px;"><b>No Post</b></span>
@@ -76,7 +82,7 @@
 							<div class="timeline-info">
 								<ul>
 									<li class="admin-name">
-									  <h5 style="color: black;white-space: nowrap; width: 110px; font-size: 27px;"><b>@{{user_profile.user.username}}</b></h5>
+									  <h5 style="color: antiquewhite;white-space: nowrap; width: 110px; font-size: 27px;"><b>@{{user_profile.user.username}}</b></h5>
 									 
 									</li>
 									
@@ -88,7 +94,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="bio">
+			<div class="bio" style="color: antiquewhite;">
 					{{user_profile.bio}}
 			</div>
 		</section>
