@@ -233,7 +233,7 @@
                 <div class="container">
                 <div class="row ng-scope">
                     <div class="col-md-3 col-md-push-9">
-                        <h4 style="color: antiquewhite;">Results For <span class="fw-semi-bold"><b>{{username}}</b></span></h4>
+                        <h4 style="color: black;">Results For <span class="fw-semi-bold"><b>{{username}}</b></span></h4>
                         <br>
                         
                     </div>
@@ -242,7 +242,7 @@
                         
                         {% for users in username_profile_list %}
                         <section class="search-result-item">
-                            <a class="image-link" href="/profile/{{users.user}}"><img class="image" src="{{users.profileimg.url}}">
+                            <a style="border-radius: 10px;" class="image-link" href="/profile/{{users.user}}"><img class="image" src="{{users.profileimg.url}}">
                             </a>
                             <div class="search-result-item-body">
                                 <div class="row">
