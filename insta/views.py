@@ -3,12 +3,19 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.conf import settings
 from insta.models import Profile, Post, LikePost, FollowersCount
 from itertools import chain
 import random
 
 
+
+
 # Create your views here.
+def error_404_view(request, exception):
+    # we add the path to the the 404.html file
+    # here. The name of our HTML file is 404.html
+    return render(request, '404.html')
 @login_required(login_url='signin')
 def index(request):
     user_object = User.objects.get(username=request.user.username)

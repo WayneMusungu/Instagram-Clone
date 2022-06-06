@@ -24,3 +24,5 @@ urlpatterns = [
 ]
 
 urlpatterns = urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+handler404 = 'insta.views.error_404_view'
