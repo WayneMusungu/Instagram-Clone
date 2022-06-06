@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'favicon.png' %}" rel="icon" type="image/png">
-    <title>Home</title>
+    <title>Instagram Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
@@ -26,19 +26,13 @@
             <form action="/search" method="POST">
                 {% csrf_token %}
                 <div class="left-side">
-                    <!-- Logo -->
-                    <div id="logo" class=" uk-hidden@s">
-                        <a href="home.html">
-                            <b>
-                                <h1 style="text-transform: uppercase;">Instagram</h1>
-                            </b>
-                        </a>
-                    </div>
+                   
+                    <h1 style="font-size: larger; font-weight: bold;">Instagram</h1>
 
 
 
                     <!-- <div class="header_search"> -->
-                    <input type="text" name="username" placeholder="Search for username..">&nbsp; &nbsp;
+                    <input  style="margin-left: 570px;" type="text" name="username" placeholder="Search for username..">&nbsp; &nbsp;
                     <button type="submit"><i class="fa fa-search fa-1x"></i></button>
                     <!-- </div> -->
 
@@ -245,7 +239,7 @@
                 <div class="bg-white  shadow-md rounded-md overflow-hidden">
 
                     <div class="bg-gray-50  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
-                        <h2 class="font-semibold text-lg">Users You Can Follow</h2>
+                        <h2 class="font-semibold text-lg">Recommended Users to Follow</h2>
 
                     </div>
 
