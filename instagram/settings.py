@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3^jc(*c8zdkqr4f7&50ki1dx*_42g#c$ojt=h@%u#z$brans_('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'enigmatic-bastion-78619.herokuapp.com']
 
