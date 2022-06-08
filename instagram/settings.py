@@ -159,9 +159,9 @@ django_heroku.settings(locals())
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-cloudinary.config(
-    cloud_name = "dsdzrt2xr",
-    api_key = "148214646959657",
-    api_secret = "Eb_BdyQjlcQTHU4DgEITbGki1WI",
-    secure = True
+cloudinary.config( 
+  cloud_name = "dhmbjiskt", 
+  api_key = "335994163622817", 
+  api_secret = "yoEvtKnCdOIAOkF7vgcTnhcY4Rk",
+  secure = True
 )
