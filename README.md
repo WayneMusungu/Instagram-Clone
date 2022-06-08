@@ -6,7 +6,7 @@
 #### Author: [Wayne Musungu](https://github.com/WayneMusungu)
 
 #### **Description**
-THis is an instagram clone application that allows users to create an account, upload posts, like and download other users photos
+This is an Instagram clone application that allows users to create an account, upload posts, like and download other users photos
 
 
 #### Livelink
