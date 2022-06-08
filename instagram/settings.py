@@ -85,27 +85,27 @@ WSGI_APPLICATION = 'instagram.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'instagram',
-        'USER': 'wayne',
-        'PASSWORD':'password',
-    }
-}
-
-# DATABASES={
-#    'default':{
-#       'ENGINE':'django.db.backends.postgresql_psycopg2',
-#       'NAME':'d1et304h3unn69',
-#       'USER':'uypsvywuesdngo',
-#       'PASSWORD':'b72f5fb17104973e449f06129db2529e8a4356f4a329856b2170516dcbf07297',
-#       'HOST':'ec2-3-211-221-185.compute-1.amazonaws.com',
-#       'PORT':'5432',
-#    }
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'instagram',
+#         'USER': 'wayne',
+#         'PASSWORD':'password',
+#     }
 # }
+
+DATABASES={
+   'default':{
+      'ENGINE':'django.db.backends.postgresql_psycopg2',
+      'NAME':'d1et304h3unn69',
+      'USER':'uypsvywuesdngo',
+      'PASSWORD':'b72f5fb17104973e449f06129db2529e8a4356f4a329856b2170516dcbf07297',
+      'HOST':'ec2-3-211-221-185.compute-1.amazonaws.com',
+      'PORT':'5432',
+   }
+}
 
 
 
