@@ -51,7 +51,7 @@ curl https://bootstrap.pypa.io/get-pip.py | python
 
 #### Contact Information
 
-You can reach me on my email [waynemuyera17@gmail.com.com]
+You can reach me on my email [waynemuyera17@gmail.com]
 
 
 
